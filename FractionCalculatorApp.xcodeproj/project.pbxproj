@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C04C4D111D9AA444008F854B /* Black_Down_Arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = C04C4D101D9AA444008F854B /* Black_Down_Arrow.png */; };
 		C06B8DC41D955FE500CAB6E5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C06B8DC31D955FE500CAB6E5 /* main.m */; };
 		C06B8DC71D955FE500CAB6E5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C06B8DC61D955FE500CAB6E5 /* AppDelegate.m */; };
 		C06B8DCA1D955FE500CAB6E5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C06B8DC91D955FE500CAB6E5 /* ViewController.m */; };
@@ -15,6 +16,9 @@
 		C06B8DD21D955FE500CAB6E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C06B8DD01D955FE500CAB6E5 /* LaunchScreen.storyboard */; };
 		C06B8DDD1D955FE500CAB6E5 /* FractionCalculatorAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C06B8DDC1D955FE500CAB6E5 /* FractionCalculatorAppTests.m */; };
 		C06B8DE81D955FE500CAB6E5 /* FractionCalculatorAppUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C06B8DE71D955FE500CAB6E5 /* FractionCalculatorAppUITests.m */; };
+		C0BD550C1D96F48A00D54001 /* blackline.png in Resources */ = {isa = PBXBuildFile; fileRef = C0BD550B1D96F48A00D54001 /* blackline.png */; };
+		C0E96E021D9605CB00C866F5 /* Fraction.m in Sources */ = {isa = PBXBuildFile; fileRef = C0E96E001D9605CB00C866F5 /* Fraction.m */; };
+		C0E96E031D9605CB00C866F5 /* FractionCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = C0E96E011D9605CB00C866F5 /* FractionCalculator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C04C4D101D9AA444008F854B /* Black_Down_Arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Black_Down_Arrow.png; sourceTree = "<group>"; };
 		C06B8DBF1D955FE500CAB6E5 /* FractionCalculatorApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FractionCalculatorApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C06B8DC31D955FE500CAB6E5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C06B8DC51D955FE500CAB6E5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +56,11 @@
 		C06B8DE31D955FE500CAB6E5 /* FractionCalculatorAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FractionCalculatorAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C06B8DE71D955FE500CAB6E5 /* FractionCalculatorAppUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FractionCalculatorAppUITests.m; sourceTree = "<group>"; };
 		C06B8DE91D955FE500CAB6E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C0BD550B1D96F48A00D54001 /* blackline.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blackline.png; sourceTree = "<group>"; };
+		C0E96DFE1D9605CB00C866F5 /* Fraction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Fraction.h; sourceTree = "<group>"; };
+		C0E96DFF1D9605CB00C866F5 /* FractionCalculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FractionCalculator.h; sourceTree = "<group>"; };
+		C0E96E001D9605CB00C866F5 /* Fraction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Fraction.m; sourceTree = "<group>"; };
+		C0E96E011D9605CB00C866F5 /* FractionCalculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FractionCalculator.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,9 +115,15 @@
 				C06B8DC61D955FE500CAB6E5 /* AppDelegate.m */,
 				C06B8DC81D955FE500CAB6E5 /* ViewController.h */,
 				C06B8DC91D955FE500CAB6E5 /* ViewController.m */,
+				C0E96DFE1D9605CB00C866F5 /* Fraction.h */,
+				C0E96DFF1D9605CB00C866F5 /* FractionCalculator.h */,
+				C0E96E001D9605CB00C866F5 /* Fraction.m */,
+				C0E96E011D9605CB00C866F5 /* FractionCalculator.m */,
 				C06B8DCB1D955FE500CAB6E5 /* Main.storyboard */,
+				C04C4D101D9AA444008F854B /* Black_Down_Arrow.png */,
 				C06B8DCE1D955FE500CAB6E5 /* Assets.xcassets */,
 				C06B8DD01D955FE500CAB6E5 /* LaunchScreen.storyboard */,
+				C0BD550B1D96F48A00D54001 /* blackline.png */,
 				C06B8DD31D955FE500CAB6E5 /* Info.plist */,
 				C06B8DC21D955FE500CAB6E5 /* Supporting Files */,
 			);
@@ -207,6 +223,7 @@
 				TargetAttributes = {
 					C06B8DBE1D955FE500CAB6E5 = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 3JXBJHA9VD;
 						ProvisioningStyle = Automatic;
 					};
 					C06B8DD71D955FE500CAB6E5 = {
@@ -247,7 +264,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				C06B8DD21D955FE500CAB6E5 /* LaunchScreen.storyboard in Resources */,
+				C0BD550C1D96F48A00D54001 /* blackline.png in Resources */,
 				C06B8DCF1D955FE500CAB6E5 /* Assets.xcassets in Resources */,
+				C04C4D111D9AA444008F854B /* Black_Down_Arrow.png in Resources */,
 				C06B8DCD1D955FE500CAB6E5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -276,6 +295,8 @@
 				C06B8DCA1D955FE500CAB6E5 /* ViewController.m in Sources */,
 				C06B8DC71D955FE500CAB6E5 /* AppDelegate.m in Sources */,
 				C06B8DC41D955FE500CAB6E5 /* main.m in Sources */,
+				C0E96E021D9605CB00C866F5 /* Fraction.m in Sources */,
+				C0E96E031D9605CB00C866F5 /* FractionCalculator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,6 +445,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3JXBJHA9VD;
 				INFOPLIST_FILE = FractionCalculatorApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xanderli.FractionCalculatorApp;
@@ -435,6 +457,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3JXBJHA9VD;
 				INFOPLIST_FILE = FractionCalculatorApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xanderli.FractionCalculatorApp;
@@ -507,6 +530,7 @@
 				C06B8DEE1D955FE500CAB6E5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C06B8DEF1D955FE500CAB6E5 /* Build configuration list for PBXNativeTarget "FractionCalculatorAppTests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +539,7 @@
 				C06B8DF11D955FE500CAB6E5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C06B8DF21D955FE500CAB6E5 /* Build configuration list for PBXNativeTarget "FractionCalculatorAppUITests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +548,7 @@
 				C06B8DF41D955FE500CAB6E5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
