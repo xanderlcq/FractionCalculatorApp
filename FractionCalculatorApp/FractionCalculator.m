@@ -20,7 +20,7 @@
 -(Boolean) addFraction:(Fraction *)f
 {
     if([operants count] == [operators count]){
-        if([[operators lastObject] isEqualToString:@"/"]){
+        if([[operators lastObject] isEqualToString:@"÷"]){
             if(![f isZero]){
                 [operants addObject:f];
                 return YES;
@@ -35,7 +35,7 @@
 
 -(Boolean) addOperator:(NSString*) i
 {
-    NSString *ops = @"+-/*";
+    NSString *ops = @"+−÷×";
     if([operants count] == [operators count]+1){
         if([ops containsString:i]){
             [operators addObject:i];
@@ -54,7 +54,7 @@
 
 -(Boolean) isValid
 {
-    if([operants count] == [operators count]+1){
+    if([operants count] == [operators count]+1 && [operators count] != 0){
         return YES;
     }
     return NO;
@@ -65,16 +65,17 @@
     if(![self isValid]){
         return NULL;
     }
+    NSLog(@"check");
     for(int i = 0; i < [operators count];i++){
-        if([[operators objectAtIndex:i]  isEqual: @"*"] || [[operators objectAtIndex:i]  isEqual: @"/"]){
-            if([[operators objectAtIndex:i]  isEqual: @"*"]){
+        if([[operators objectAtIndex:i]  isEqual: @"×"] || [[operators objectAtIndex:i]  isEqual: @"÷"]){
+            if([[operators objectAtIndex:i]  isEqual: @"×"]){
                 [self multiply:[operants objectAtIndex:i] secondFraction:[operants objectAtIndex:i+1]];
                 [operants removeObjectAtIndex:i+1];
                 [operators removeObjectAtIndex:i];
                 i--;
                 continue;
             }
-            if([[operators objectAtIndex:i]  isEqual: @"/"]){
+            if([[operators objectAtIndex:i]  isEqual: @"÷"]){
                 [self divide:[operants objectAtIndex:i] secondFraction:[operants objectAtIndex:i+1]];
                 [operants removeObjectAtIndex:i+1];
                 [operators removeObjectAtIndex:i];
@@ -84,7 +85,7 @@
         }
     }
     for(int i = 0; i < [operators count];i++){
-        if([[operators objectAtIndex:i]  isEqual: @"+"] || [[operators objectAtIndex:i]  isEqual: @"-"]){
+        if([[operators objectAtIndex:i]  isEqual: @"+"] || [[operators objectAtIndex:i]  isEqual: @"−"]){
             if([[operators objectAtIndex:i]  isEqual: @"+"]){
                 [self add:[operants objectAtIndex:i] secondFraction:[operants objectAtIndex:i+1]];
                 [operants removeObjectAtIndex:i+1];
@@ -92,7 +93,7 @@
                 i--;
                 continue;
             }
-            if([[operators objectAtIndex:i]  isEqual: @"-"]){
+            if([[operators objectAtIndex:i]  isEqual: @"−"]){
                 [self minus:[operants objectAtIndex:i] secondFraction:[operants objectAtIndex:i+1]];
                 [operants removeObjectAtIndex:i+1];
                 [operators removeObjectAtIndex:i];
@@ -103,6 +104,7 @@
     }
     
     [[operants objectAtIndex:0] simplify];
+    NSLog(@"%lu",(unsigned long)[operators count]);
     return [operants objectAtIndex:0];
 }
 
@@ -151,9 +153,27 @@
     [first setDenominator:[first denominator]*[second denominator]];
     [first simplify];
 }
+-(Boolean) pop
+{
+    if([operants count] ==0 )
+        return NO;
+    if([operants count] == [operators count]){
+        [operators removeObjectAtIndex:[operants count]-1];
+    }else{
+        [operants removeObjectAtIndex:[operants count]-1];
+    }
+    return YES;
+}
 
-//-(void) mod
-//{
-   
-//}
+-(NSString *) prettyPrint
+{
+    NSString *output = @"";
+    for(int i = 0; i < [operators count];i++){
+        output = [output stringByAppendingFormat:@"%@  %@  ",[[operants objectAtIndex:i] prettyPrint],[operators objectAtIndex:i]];
+    }
+    if([operators count] != [operants count]){
+        output = [output stringByAppendingFormat:@"%@  ",[[operants objectAtIndex:[operants count]-1] prettyPrint]];
+    }
+    return output;
+}
 @end

@@ -21,6 +21,8 @@
 -(void) reciprocal;
 -(void) print;
 -(Boolean) isZero;
+-(void) setup;
+-(NSString *) prettyPrint;
 @end
 
 

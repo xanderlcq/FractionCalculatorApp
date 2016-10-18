@@ -20,6 +20,8 @@
 -(Boolean) addOperator:(NSString*) i;
 -(Fraction*) getResult;
 -(Boolean) isValid;
+-(Boolean) pop;
+-(NSString *) prettyPrint;
 
 @end
 
